@@ -126,7 +126,7 @@ function App() {
        } else{
         localStorage.setItem('citas', JSON.stringify([]));
        }
-    }
+    }, [citas]
   )
 
   const titulo = Object.keys(citas).length === 0 ? 'No hay Citas' : 'Administrar Citas';
